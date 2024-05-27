@@ -33,7 +33,7 @@ pipeline {
         stage('Deploy Application') {
             steps {
                 script {
-                    def projectId = 'your-gcp-project-id'
+                    def projectId = 'gcp-service-account-json'
                     def imageName = 'gcr.io/' + projectId + '/your-app'
                     
                     sh """
